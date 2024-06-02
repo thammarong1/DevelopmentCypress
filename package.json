@@ -24,7 +24,6 @@
   
   "devDependencies": {
     "cypress": "^13.8.1",
-    "123":"",
     "cypress-multi-reporters": "^1.6.4",
     "cypress-xpath": "^2.0.1",
     "mocha": "^10.4.0",
