@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-06-02T10:20:45.452Z",
+    "end": "2024-06-02T10:21:08.236Z",
+    "duration": 22784,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a31e7d0d-e9e3-4f4a-b5fe-0f266380df23",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smokeTest\\Tc03_Checkbox.cy.js",
+      "file": "cypress\\e2e\\smokeTest\\Tc03_Checkbox.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "35f3b2a0-0e43-45e0-8ac5-1a5da477ff1f",
+          "title": "Checkbox Function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Hadling different Checkbox",
+              "fullTitle": "Checkbox Function Hadling different Checkbox",
+              "timedOut": null,
+              "duration": 14242,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/');\ncy.get('#checkbox-v-2a').should('not.be.checked').check({\n  force: true\n}).should('not.be.checked');\ncy.get('#checkbox-v-2c').should('not.be.checked').check({\n  force: true\n}).should('not.be.checked');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4050ms: expected '<input#checkbox-v-2a>' not to be 'checked'",
+                "estack": "AssertionError: Timed out retrying after 4050ms: expected '<input#checkbox-v-2a>' not to be 'checked'\n    at Context.eval (webpack://developmentcypress/./cypress/e2e/smokeTest/Tc03_Checkbox.cy.js:9:81)",
+                "diff": null
+              },
+              "uuid": "9ccdf458-2b1f-44b2-bbb1-26f9106991e2",
+              "parentUUID": "35f3b2a0-0e43-45e0-8ac5-1a5da477ff1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9ccdf458-2b1f-44b2-bbb1-26f9106991e2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14242,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

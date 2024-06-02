@@ -20,12 +20,12 @@ import addContext from 'mochawesome/addContext'
 
 require('cypress-xpath')
 
-// Cypress.on('test:after:run',(test,runnable) =>{
-//     if(test.state==='failed'){
-//             const screenshort = assets``/${Cyress.spec.name}/${runable.parent.title} --${test.title}(failed).png
-//             addContext({test},screenshort)
-//     }
-// })
+Cypress.on('test:after:run',(test,runnable) =>{
+    if(test.state==='failed'){
+            const screenshort = `assets/${Cyress.spec.name}/${runnable.parent.title} --${test.title}(failed).png`
+            addContext({test},screenshort)
+    }
+})
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

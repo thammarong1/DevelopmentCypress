@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-02T10:20:25.048Z",
+    "end": "2024-06-02T10:20:40.262Z",
+    "duration": 15214,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb779a3f-e795-4b83-aac5-5f39912a1751",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smokeTest\\Tc02_RadioButton.cy.js",
+      "file": "cypress\\e2e\\smokeTest\\Tc02_RadioButton.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4832ad11-3a07-45e4-b69d-d696dd510f4b",
+          "title": "Radio Button Function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Hadling different radio button",
+              "fullTitle": "Radio Button Function Hadling different radio button",
+              "timedOut": null,
+              "duration": 7325,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Basic Radio Button\ncy.visit('https://demos.jquerymobile.com/1.4.5/checkboxradio-radio/');\ncy.get('#radio-choice-0a').should('not.be.checked').click({\n  force: true\n});\ncy.get('#radio-choice-0b').should('not.be.checked').click({\n  force: true\n});\n//Modern Radiio Button\ncy.get('#radio-choice-h-2b').should('not.be.checked').click({\n  force: true\n});\ncy.get('#radio-choice-h-2c').should('not.be.checked').click({\n  force: true\n});",
+              "err": {},
+              "uuid": "d107fb2b-f0b0-4045-af3b-d10bd9002977",
+              "parentUUID": "4832ad11-3a07-45e4-b69d-d696dd510f4b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d107fb2b-f0b0-4045-af3b-d10bd9002977"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7325,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

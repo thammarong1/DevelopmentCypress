@@ -5,14 +5,14 @@ module.exports = defineConfig({
   screenshotsFolder:"cypress/reports/mochareports/assets",
   projectId: "isg9qs",
   "reporter": "cypress-multi-reporters",
-  "reportOption":{
-    "reporterEnable":"mochawesome",
-    "mochawesomeReporterOption":{
-      "reportDir":"./cypress/reports/mocha",
-      "quiet":true,
-      "overwrite":false,
-      "html":false,
-      "json":true
+  "reporterOptions":{
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions":{
+      "reportDir": "cypress/reports/mocha",
+      "quiet": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
     }
   },
 
