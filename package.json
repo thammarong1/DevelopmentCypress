@@ -21,7 +21,7 @@
   },
   "scripts": {
     "open": "cypress open",
-    "electron": "cypress run --spec \"cypress\\e2e\\Tc01_FirstScript.spec.cy.js\"",
+    "electron": "cypress run --spec ./cypress/e2e/Tc16_POM_Implementation.cy",
     "chrome": "cypress run --browser chrome --spec \"cypress\\e2e\\Tc01_FirstScript.spec.cy.js\"",
     "smoke-test": "cypress run --spec \"cypress\\e2e\\smokeTest\\*.cy.js\"",
     "test-electron-headed": "cypress run --headed",

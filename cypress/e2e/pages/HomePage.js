@@ -1,4 +1,5 @@
-class HomePage {
+import BasePage from "../BasePages/basePage"
+class HomePage extends BasePage{
 
     getYourFeed() {
         return 'Your Feed'
@@ -21,11 +22,13 @@ class HomePage {
     }
 
     checkYourFeedIsvasible(){
-        cy.contains(this.getYourFeed()).should('be.visible')
+        this.isElementVisible(this.getYourFeed(),true);
+        //return this;
     }
 
     clickSittingButton(){
-        cy.contains(this.getSettings()).click()
+        this.clickElement(this.getSettings(),true);
     }
 }
-export default HomePage
+const homePage = new HomePage();
+export default homePage
