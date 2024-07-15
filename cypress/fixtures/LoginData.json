@@ -2,5 +2,13 @@
     "validEmail" : "cypressdemo@gmail.com",
     "validPassword" : "cypressdemo",
     "invalidEmail" : "cypressdemo123@gmail.com",
-    "invalidPassword" : "cypressdemo123"
+    "invalidPassword" : "cypressdemo123",
+
+    "ีuser002": {
+        "validEmail" : "cypressdemo@gmail.com",
+        "validPassword" : "cypressdemo",
+        "invalidEmail" : "cypressdemo123@gmail.com",
+        "invalidPassword" : "cypressdemo123"
+      }
+
 }

@@ -1,3 +1,4 @@
+/*
 /// <reference types="Cypress" />
 
 class BasePage {
@@ -51,5 +52,6 @@ class BasePage {
         }
     }
 }
-
-export default BasePage;
+const basePage = new BasePage;
+export default basePage;
+*/

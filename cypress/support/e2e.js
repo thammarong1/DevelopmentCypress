@@ -27,5 +27,6 @@ Cypress.on('test:after:run',(test,runnable) =>{
     }
 })
 
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

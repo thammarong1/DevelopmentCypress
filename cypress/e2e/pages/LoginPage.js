@@ -1,33 +1,23 @@
-import BasePage from "../BasePages/basePage";
+class LoginPage{
 
-class LoginPages extends BasePage {
+    getEmail(){return 'input[type="email"]'}
 
-    getEmail() {
-        return 'input[type = "email"]'
-    }
-    getPassword() {
-        return 'input[type = "password"]'
-    }
-    getLoginButton() {
-        return 'button[type="submit"]'
-    }
+    getPassword(){return 'input[type="password"]'}
+
+    getSigninButton(){return 'button[type="submit"]'}
 
     enterEmail(email){
-        this.fillText(this.getEmail(),email);
-        //return this;
+        cy.get(this.getEmail()).type(email)
     }
 
     enterPassword(password){
-        this.fillText(this.getPassword(),password);
-        //return this;
+        cy.get(this.getPassword()).type(password)
     }
 
-    clickLoginButton(){
-        cy.get(this.getLoginButton()).click()
-        this.fillText(this.getLoginButton().true);
+    clickSigninButton(){
+        cy.get(this.getSigninButton()).click()
     }
-
 
 }
-const loginPage = new LoginPages();
-export default loginPage
+
+export default LoginPage

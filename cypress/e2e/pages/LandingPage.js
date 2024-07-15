@@ -1,13 +1,11 @@
-import BasePage from "../BasePages/basePage";
-class LandingPage extends BasePage {
+class LandingPage{
 
-    getSignin() { 
-        return 'Sign in'
+    getSignin(){return 'Sign in'}
+
+    clickSigninButton(){
+        cy.contains(this.getSignin()).click()
     }
 
-    clickSinginButton() {
-        this.clickElement(this.getSignin(),true);
-    }
 }
-const landingPage = new LandingPage();
-export default landingPage
+
+export default LandingPage

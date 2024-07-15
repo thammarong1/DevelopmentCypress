@@ -4,12 +4,12 @@
 
 describe('Dropdown Function', function () {
 
-    xit('Hadling Static Dropdown', function () {
+    it('Hadling Static Dropdown', function () {
         cy.visit('https://seleniumbase.io/demo_page')
         cy.get('#mySelect').select('Set to 100%').should('have.value', '100%')
     })
 
-    xit('Hadling dynamic Dropdown', function () {
+    it.only('Hadling dynamic Dropdown', function () {
         cy.visit('https://demos.telerik.com/aspnet-ajax/dropdownlist/examples/overview/defaultcs.aspx')
         cy.get('#ctl00_ContentPlaceholder1_RadDropDownProducts').click()
         cy.get('.rddlItem').contains('Vegie-spread').click()

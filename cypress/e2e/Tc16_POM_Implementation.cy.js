@@ -1,29 +1,30 @@
 /// <reference types="Cypress" />
 
-import landingPage from "./pages/landingPage";
-import loginPage from "./pages/loginPage";
-import homePage from "./pages/homePage";
-import settingsPage from "./pages/settingPage";
+import LandingPage from "./Pages/landingPage"
+import LoginPage from "./Pages/loginPage"
+import HomePage from "./Pages/homePage"
+import SettingsPage from "./Pages/settingPage"
 
 
-describe('Page option model (POM)',function(){
+describe('POM Test',function(){
 
     beforeEach(function(){
         cy.fixture('LoginData').as('data')
     })
 
-    it('condition - valid credentials ', function() {
+    const landingPage = new LandingPage()
+    const loginPage = new LoginPage()
+    const homePage = new HomePage()
+    const settingsPage = new SettingsPage()
+
+    it('Conduit Login using POM',function(){
         cy.visit('/')
-        landingPage.clickSinginButton()
+        landingPage.clickSigninButton()
         loginPage.enterEmail(this.data.validEmail)
         loginPage.enterPassword(this.data.validPassword)
-        loginPage.clickLoginButton()
-        homePage.checkYourFeedIsvasible()
-        homePage.clickSittingButton()
+        loginPage.clickSigninButton()
+        homePage.checkYourFeedIsVisible()
+        homePage.clickSettingsButton()
         settingsPage.clickLogoutButton()
-    });
-
-
-
-
+    })
 })

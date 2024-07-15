@@ -1,34 +1,22 @@
-import BasePage from "../BasePages/basePage"
-class HomePage extends BasePage{
+class HomePage{
 
-    getYourFeed() {
-        return 'Your Feed'
-    }
-    
-    getGlobalFeed(){
-        return 'Global Feed'
-    }
+    getYourFeed(){return 'Your Feed'}
 
-    getHome(){
-        return 'Home'
-    }
+    getGlobalFeed(){return 'Global Feed'}
 
-    getNewPost(){
-        return 'New Post'
+    getHome(){return 'Home'}
+
+    getNewPost(){return 'New Post'}
+
+    getSettings(){return 'Settings'}
+
+    checkYourFeedIsVisible(){
+        cy.contains(this.getYourFeed()).should('be.visible')
     }
 
-    getSettings(){
-        return 'Settings'
-    }
-
-    checkYourFeedIsvasible(){
-        this.isElementVisible(this.getYourFeed(),true);
-        //return this;
-    }
-
-    clickSittingButton(){
-        this.clickElement(this.getSettings(),true);
+    clickSettingsButton(){
+        cy.contains(this.getSettings()).click()
     }
 }
-const homePage = new HomePage();
-export default homePage
+
+export default HomePage

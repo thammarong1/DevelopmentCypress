@@ -17,6 +17,8 @@ Cypress.Commands.add('ConduitLogin', (email, password) => {
     cy.get('input[placeholder="Password"]').type(password)
     cy.get('button[type="submit"]').click()
 })
+
+//import 'cypress-file-upload';
 //
 //
 // -- This is a child command --
